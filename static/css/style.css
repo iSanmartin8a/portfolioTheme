@@ -2,23 +2,10 @@
 
 /* IDS */
 
-html, body {
-  background-color: blue;
-}
-
-#fWrapper {
-  background-color: brown;
-}
-
 #hWrapper {
   position: static;
   top: 0%;
   left: 0%;
   width: 100%;
-  background-color: darkslateblue;
-}
-
-#hSearch {
-  position: relative;
-  background-color: blue;
+  background-color: black;
 }
