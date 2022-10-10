@@ -2,11 +2,12 @@
 {{ .Site.Params.menu.main}}
 
 <div>
-    <h1 class="titulo">{{.Params.title}}</h1>
-    <h2 class="titulo">{{.Params.subtitulo}}</h2>
+    <!-- <h1 class="titulo">{{.Params.title}}</h1> -->
+    <img src="{{ "images/pPic.jpeg" |  relURL  }}" id="pPic">
+    <h2 class="xlTitle">A 24 years old </h2><h2 class="lTitle">Front End Developer</h2><h2 class="mTitle"> from Zaragoza, Spain.</h2>
     {{ .Content }}
-    <div class="contributors">
-        <h3>Desarrolladores del proyecto:</h3>
+    <div id="contributors">
+        <h3>Developers:</h3>
         {{ $headers := (dict "Authorization" "isanmartin8a@gmail.com:my_personal_access_token") }}
         {{ $contributors := getJSON "https://api.github.com/repos/isanmartin8a/iSanmartin8a.github.io/contributors" $headers }}
         <table>
@@ -14,7 +15,7 @@
                 <td>
                     {{ range $contributors }}
                     <a href="{{ .html_url }}" target="_blank">
-                                <img src="{{ .avatar_url }}" alt="{{ .login }}" class="imageCont" style="width: 3rem; border: 0px;">
+                                <img src="{{ .avatar_url }}" alt="{{ .login }}" class="iCont" style="width: 3rem; border: 0px;">
                     </a>
                 </td>
             </tr>
