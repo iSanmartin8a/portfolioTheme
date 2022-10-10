@@ -1,29 +1,26 @@
-{{- partial "head.html" . -}}
-
 <header>
-    <table id="cabeza">
-        <tr>
-            <td><a href="/acme">
-                    <h1><img src="https://www.logolynx.com/images/logolynx/08/08697a564fc07ae9fcb6b324b89eeb00.png"
-                            class="grande" style="width: 100px; margin-left: 0%; border: 0px;" alt=""></h1>
-                </a></td>
-            <td>
-                <nav class="navigator">
-                    <a href="/acme" class="button">Acme</a>
-                    <a href="/acme/travels" class="button">Viajes</a>
-                    <a href="/acme/peliculas/peliculas" class="button">Películas</a>
-                    <a href="/acme/colegios/colegios" class="button">Colegios</a>
-                    <a href="/acme/blog" class="button">Blog</a>
-                    <a href="/acme/contact" class="button">Contacto</a>
-                    <a href="/acme/about" class="button">Acerca de</a>
-                </nav>
-            </td>
-            <td>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </td>
-        </tr>
-    </table>
+    <div id="hWrapper">
+        <div id="hIcon">
+            <!-- <a href="/portfolio">
+                <h1></h1>
+            </a> -->
+        </div>
+        <div id="hNav">
+            <nav class="navigator">
+                <!-- <a href="/acme" class="button">Acme</a>
+                <a href="/acme/travels" class="button">Viajes</a>
+                <a href="/acme/peliculas/peliculas" class="button">Películas</a>
+                <a href="/acme/colegios/colegios" class="button">Colegios</a>
+                <a href="/acme/blog" class="button">Blog</a>
+                <a href="/acme/contact" class="button">Contacto</a>
+                <a href="/acme/about" class="button">Acerca de</a> -->
+            </nav>
+        </div>
+        <div id="hSearch">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
 </header>
