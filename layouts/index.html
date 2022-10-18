@@ -7,7 +7,6 @@
             <div class="picCard">
                     <div class="picContent">
                         <h2 id="cardTitle">Identification Data:</h2>
-                        <p>
                             <ul class="dni">
                                 <li><strong>Name:</strong> Alejandro</li>
                                 <li><strong>Surname:</strong> Sanmartín Borobia</li>
@@ -15,7 +14,6 @@
                                 <li><strong>Email:</strong> isanmartin8a@gmail.com</li>
                                 <li><strong>Location:</strong> Zaragoza, Spain</li>
                             </ul>
-                        </p>
                     </div>
                     <div class="social">
                         <a target="_blank" href="https://www.linkedin.com/in/sanmartin8a"><img src="https://cdn-icons-png.flaticon.com/512/4401/4401412.png" alt="LinkedIn" class="socialIcon"></a>
@@ -30,9 +28,8 @@
             <h2 class="mainTitle">Howdy! <br>I'm <span class="colorTitle">Alex</span> and <br>I am a <br><span class="colorTitle">Front End</span> Developer.</h2>
         </div>
     </div>
-    <br><br><br><br><br><br><br>
     {{ .Content }}
-    <div id="contributors">
+    <div id="contributors" style="display: none;">
         <h3>Developers:</h3>
         {{ $headers := (dict "Authorization" "isanmartin8a@gmail.com:my_personal_access_token") }}
         {{ $contributors := getJSON "https://api.github.com/repos/isanmartin8a/iSanmartin8a.github.io/contributors"
@@ -50,6 +47,5 @@
         </table>
         {{ end }}
     </div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </div>
 {{ end }}
