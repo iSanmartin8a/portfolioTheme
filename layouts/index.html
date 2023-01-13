@@ -15,21 +15,35 @@
             </div>
         </div>
     </div>
-    <div id="first">
+    <div id="menu">
+        <div class="lightMenu home"><h1>Home</h1><div class="lightScratch"></div></div>
+        <div class="lightMenu projects"><h1>Projects</h1><div class="lightScratch"></div></div>
+        <div class="lightMenu education"><h1>Education</h1><div class="lightScratch"></div></div>
+        <div class="lightMenu work"><h1>Work Experience</h1><div class="lightScratch"></div></div>
+    </div>
+    <div class="first">
         <div id="title">
             <span id="firstLine">Howdy!</span>
             <span id="secondLine"> I'm </span>
             <span id="thirdLine">I am a Front End Developer</span>
             <img src="https://www.freeiconspng.com/uploads/rain-clouds-png-27.png" alt="" id="cloud" class="lightCloud">
         </div>
-        <div id="menu">
-            <a href="showHome()" class="lightMenu"><h1>Home</h1><div class="lightScratch"></div></a>
-            <a href="showProjects()" class="lightMenu"><h1>Projects</h1><div class="lightScratch"></div></a>
-            <a href="showEducation()" class="lightMenu"><h1>Education</h1><div class="lightScratch"></div></a>
-            <a href="showWork()" class="lightMenu"><h1>Work Experience</h1><div class="lightScratch"></div></a>
-        </div>
     </div>
-    <div id="second">
+    <div class="second">
+        <div id="secondSubtitle">
+            <span id="secondCaption">Projects I've done</span>
+        </div>
+        <div class="projectsStory">
+            <div>
+                <img src="{{ "images/charla.png" |  relURL  }}" alt="" class="chatterImg">
+                <h2 class="projectCaption">Chatter</h2>
+            </div>
+            <img src="{{ "images/flecha.png" | relURL }}" alt="" class="flecha">
+            <div>
+                <img src="{{ "images/red.png" |  relURL  }}" alt="" class="chatterImg">
+                <h2 class="projectCaption">Radarfi</h2>
+            </div>
+        </div>
     </div>
 </div>
 <script src="{{ "js/settings.js" |  relURL  }}"></script>
