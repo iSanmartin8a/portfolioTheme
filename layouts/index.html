@@ -15,12 +15,7 @@
             </div>
         </div>
     </div>
-    <div id="menu">
-        <div class="lightMenu home"><h1>Home</h1><div class="lightScratch"></div></div>
-        <div class="lightMenu projects"><h1>Projects</h1><div class="lightScratch"></div></div>
-        <div class="lightMenu education"><h1>Education</h1><div class="lightScratch"></div></div>
-        <div class="lightMenu work"><h1>Work Experience</h1><div class="lightScratch"></div></div>
-    </div>
+
     <div class="first">
         <div id="title">
             <span id="firstLine">Howdy!</span>
@@ -29,6 +24,7 @@
             <img src="https://www.freeiconspng.com/uploads/rain-clouds-png-27.png" alt="" id="cloud" class="lightCloud">
         </div>
     </div>
+
     <div class="second">
         <div id="secondSubtitle">
             <span id="secondCaption">Projects I've done</span>
@@ -36,14 +32,21 @@
         <div class="projectsStory">
             <div>
                 <img src="{{ "images/charla.png" |  relURL  }}" alt="" class="chatterImg">
-                <h2 class="projectCaption">Chatter</h2>
+                <div class="dataProject"><h2 class="projectCaption">Chatter</h2><a href="https://github.com/iSanmartin8a/wChatter" target="_blank"><img src="{{ "images/github.png" | relURL }}" class="icon" alt=""></a></div>
             </div>
             <img src="{{ "images/flecha.png" | relURL }}" alt="" class="flecha">
             <div>
                 <img src="{{ "images/red.png" |  relURL  }}" alt="" class="chatterImg">
-                <h2 class="projectCaption">Radarfi</h2>
+                <div class="dataProject"><h2 class="projectCaption">Radarfi</h2><a href="https://github.com/iSanmartin8a/radarfi" target="_blank"><img src="{{ "images/github.png" | relURL }}" class="icon" alt=""></a></div>
             </div>
         </div>
+    </div>
+
+    <div id="menu">
+        <div class="lightMenu home"><h1>Home</h1><div class="lightScratch"></div></div>
+        <div class="lightMenu projects"><h1>Projects</h1><div class="lightScratch"></div></div>
+        <div class="lightMenu education"><h1>Education</h1><div class="lightScratch"></div></div>
+        <div class="lightMenu work"><h1>Work Experience</h1><div class="lightScratch"></div></div>
     </div>
 </div>
 <script src="{{ "js/settings.js" |  relURL  }}"></script>
