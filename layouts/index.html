@@ -15,13 +15,17 @@
             </div>
         </div>
     </div>
-
+    <div id="summary">
+        <img src="" alt="">
+        <h1>Alejandro Sanmartín</h1>
+    </div>
     <div class="first">
         <div id="title">
             <span id="firstLine">Howdy!</span>
             <span id="secondLine"> I'm </span>
-            <span id="thirdLine">I am a Front End Developer</span>
+            <span id="thirdLine">Front End Developer</span>
             <img src="https://www.freeiconspng.com/uploads/rain-clouds-png-27.png" alt="" id="cloud" class="lightCloud">
+            <img src="{{ "images/incognito.png" | relURL }}" alt="" class="incognito" onclick="cloudTransition()">
         </div>
     </div>
 
@@ -30,33 +34,51 @@
             <span id="secondCaption">Projects I've done</span>
         </div>
         <div class="projectsStory">
-            <div onmouseover="showInfoChatter()">
-                <img src="{{ "images/charla.png" |  relURL  }}" alt="" class="chatterImg">
-                <div class="dataProject"><h2 class="projectCaption">Chatter</h2><a href="https://github.com/iSanmartin8a/wChatter" target="_blank"><img src="{{ "images/github.png" | relURL }}" class="icon" alt=""></a></div>
-                <div class="infoProject">
-                    
+            <div class="projectCard" id="chatter">
+                <img src="{{ "images/charla.png" | relURL }}" alt="" class="chatterImg">
+                <div class="dataProject">
+                    <h2 class="projectCaption">Chatter</h2><a href="https://github.com/iSanmartin8a/wChatter"
+                        target="_blank"><img src="{{ "images/github.png" | relURL }}" class="icon" alt=""></a>
                 </div>
             </div>
-            <img src="{{ "images/flecha.png" | relURL }}" alt="" class="flecha">
-            <div onmouseover="showInfoRadarfi()">
-                <img src="{{ "images/red.png" |  relURL  }}" alt="" class="chatterImg">
-                <div class="dataProject"><h2 class="projectCaption">Radarfi</h2><a href="https://github.com/iSanmartin8a/radarfi" target="_blank"><img src="{{ "images/github.png" | relURL }}" class="icon" alt=""></a></div>
-                <div class="infoProject">
-                    
+            <div class="infoProject" id="chatterInfo">
+                Created using Django, it allows us to progress through different questions that are proposed to us and with the possibility of choosing between different categories.
+            </div>
+            <!-- <img src="{{ "images/flecha.png" | relURL }}" alt="" class="flecha"> -->
+            <div class="projectCard radarfi" id="radarfi">
+                <img src="{{ "images/red.png" | relURL }}" alt="" class="chatterImg">
+                <div class="dataProject">
+                    <h2 class="projectCaption">Radarfi</h2><a href="https://github.com/iSanmartin8a/radarfi"
+                        target="_blank"><img src="{{ "images/github.png" | relURL }}" class="icon" alt=""></a>
                 </div>
+            </div>
+            <div class="infoProject" id="radarfiInfo">
+                Web application that uses a map to display the quality of WiFi in public places. Users can search for locations, view ratings, and leave their own reviews of WiFi hotspots.
             </div>
         </div>
     </div>
 
     <div id="menu">
-        <div class="lightMenu home"><h1>Home</h1><div class="lightScratch"></div></div>
-        <div class="lightMenu projects"><h1>Projects</h1><div class="lightScratch"></div></div>
-        <div class="lightMenu education"><h1>Education</h1><div class="lightScratch"></div></div>
-        <div class="lightMenu work"><h1>Work Experience</h1><div class="lightScratch"></div></div>
+        <div class="lightMenu home">
+            <h1>Home</h1>
+            <div class="lightScratch"></div>
+        </div>
+        <div class="lightMenu projects">
+            <h1>Projects</h1>
+            <div class="lightScratch"></div>
+        </div>
+        <div class="lightMenu education">
+            <h1>Education</h1>
+            <div class="lightScratch"></div>
+        </div>
+        <div class="lightMenu work">
+            <h1>Work Experience</h1>
+            <div class="lightScratch"></div>
+        </div>
     </div>
 </div>
-<script src="{{ "js/settings.js" |  relURL  }}"></script>
-<script src="{{ "js/draggable.js" |  relURL  }}"></script>
+<script src="{{ "js/settings.js" | relURL }}"></script>
+<script src="{{ "js/draggable.js" | relURL }}"></script>
 
 
 
