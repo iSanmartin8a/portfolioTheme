@@ -56,7 +56,7 @@
     <div class="content thirdContent">
         <div id="chatter" class="tarjetaProyecto">
             <img src="{{ "images/chatter.jpg" | relURL }}" alt="" class="imagenProyecto">
-            <h1>Chatter</h1>
+            <h1><i class="fa-brands fa-github" onclick="window.open('https://github.com/iSanmartin8a/wChatter')"></i> Chatter</h1>
             <p>Aplicación web sobre preguntas y temas para dialogar en una quedada con amigos.</p>
             <div class="tecnologias">
                 <div class="yellow tech">JavaScript</div>
@@ -68,7 +68,7 @@
         </div>
         <div id="radarfi" class="tarjetaProyecto">
             <img src="{{ "images/radarfi.jpg" | relURL }}" alt="" class="imagenProyecto">
-            <h1>Radarfi</h1>
+            <h1><i class="fa-brands fa-github" onclick="window.open('https://github.com/iSanmartin8a/radarfi')"></i> Radarfi</h1>
             <p>Proyecto web y móvil consultando una API que muestra los locales públicos con WiFis de mejor calidad.</p>
             <div class="tecnologias">
                 <div class="yellow tech">JavaScript</div>
@@ -154,24 +154,32 @@
         <h1 class="subtitulo">Estudios</h1>
     </div>
     <div class="content fifthContent">
-        <div class="primeraCelda">
-            <div class="centro">Salesianos Zaragoza</div>
+        <div class="primeraCelda" onclick="window.open('https://zaragoza.salesianos.edu/')">
+            <div class="centro">
+                <img src="{{ "images/salesianos.png" | relURL }}" class="logoCentro" alt="">
+                Salesianos Zaragoza</div>
             <div class="año">2016</div>
             <div class="estudio">Bachillerato Tecnológico</div>
         </div>
-        <div class="terceraCelda">
-            <div class="centro">Salesianos Zaragoza</div>
+        <div class="terceraCelda" onclick="window.open('https://zaragoza.salesianos.edu/')">
+            <div class="centro">
+                <img src="{{ "images/salesianos.png" | relURL }}" class="logoCentro" alt="">
+                Salesianos Zaragoza</div>
             <div class="año">2018</div>
             <div class="estudio">FPGS en DAM</div>
         </div>
         <div id="separator"></div>
-        <div class="quintaCelda">
-            <div class="centro">Universidad de Zaragoza</div>
+        <div class="quintaCelda" onclick="window.open('https://fecem.unizar.es/')">
+            <div class="centro">
+                <img src="{{ "images/fecem.png" | relURL }}" class="logoCentro" alt="">
+                Universidad de Zaragoza</div>
             <div class="año">2023</div>
             <div class="estudio">Carrera en Economía</div>
         </div>
-        <div class="septimaCelda">
-            <div class="centro">Los Enlaces Zaragoza</div>
+        <div class="septimaCelda" onclick="window.open('https://cpilosenlaces.com/')">
+            <div class="centro">
+                <img src="{{ "images/enlaces.jpg" | relURL }}" class="logoCentro" alt="">
+                CPIFP Los Enlaces</div>
             <div class="año">2023</div>
             <div class="estudio">FPGS en DAW</div>
         </div>
